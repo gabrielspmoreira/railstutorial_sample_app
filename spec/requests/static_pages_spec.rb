@@ -25,6 +25,7 @@ describe "Static pages" do
 
     it_should_behave_like "all static pages"
   end
+  
 
   describe "About page" do
     before { visit about_path }
@@ -56,4 +57,5 @@ describe "Static pages" do
     click_link "sample app"
     page.should have_selector 'title', text: full_title('')
   end
+
 end
